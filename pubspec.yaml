@@ -1,0 +1,36 @@
+name: local_voice_call
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.1.1
+  provider: ^6.1.2
+  go_router: ^17.3.0
+  freezed_annotation: ^3.1.0
+
+  # Local group calling over Wi-Fi (no internet).
+  flutter_webrtc: ^0.12.5      # P2P audio + video
+  network_info_plus: ^6.1.3    # read this device's LAN IP for signaling
+  permission_handler: ^11.3.1  # mic + camera + nearby runtime permissions
+  qr_flutter: ^4.1.0           # render the join QR on the host screen
+  mobile_scanner: ^5.2.3       # scan a host's QR on the join screen
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  build_runner: ^2.15.0
+  freezed: ^3.2.5
+
+flutter:
+  uses-material-design: true
